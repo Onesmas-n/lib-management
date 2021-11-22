@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="library" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/library" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/library" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
+
+/*project:Library system
+Author:Onesmas Njiru
+Language:GCC
+License:MI*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int menu();//prototype
+int main()
+{
+   int action;
+   return 0;
+}
+int menu()//header
+{
+    //body
+    int action;
+    action=menu();
+ do
+ {
+     printf("tSCHOOL LIBRARY\n");
+     printf("welcome to the library\n");
+     printf("What would you like to do in the library\n");
+     printf("1.Add user\n");
+     printf("2.New user?enter your details to sign up\n");
+     printf("3.search for a bbok\n");
+     printf("4.Explore the library\n");
+     printf("5.Borrow a book\n");
+     printf("6.Read a book in the library without borrowing\n");
+     printf("7.Use research databse\n");
+     printf("8.Attend or bring younger person to class\n");
+     printf("9.Borrow a DVD or a video type of a movie\n");
+     printf("10.Get help from librarian\n");
+     printf("11.Change password\n");
+     printf("12.Log out\n");
+     printf("please select action(1-12):\n");
+     printf("press any key to exit\n");
+     scanf("%d",&action);
+     if(action<1||action>12);
+ {
+
+   printf("Invalid Input.Try again\n");
+}
+}
+while(action<||action>12);
+return action;
+
+}
